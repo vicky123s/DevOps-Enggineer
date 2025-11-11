@@ -1,0 +1,17 @@
+ssh -i "docker.pem" ubuntu@ec2-54-227-119-106.compute-1.amazonaws.com
+ls    List all file
+ls -a List hidden file
+ll -h Human readable file
+cd  : Change directory
+mkdir : create directory
+touch
+chmod
+root user
+port number
+i/P addresss
+Deployment Day to day upadte
+CPU check 
+disk -h
+ ('#') for the root or superuser.
+ dollar sign ('$') for regular users and a hash 
+pwd- Print Working Directory.
