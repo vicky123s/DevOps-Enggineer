@@ -16,3 +16,8 @@ disk -h
  ('#') for the root or superuser.
  dollar sign ('$') for regular users and a hash 
 pwd- Print Working Directory.
+top :   all running process
+df -h :   disk size human readable
+free -h   check  used  ram memory
+cd /  go to root folder
+var    all log 
