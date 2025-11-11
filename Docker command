@@ -1,0 +1,85 @@
+
+
+                      
+# note :- docker used root used so fire first <<sudo su
+-d = daemon
+-e = environment
+-p = publish port number
+-n = name
+-i = input
+-o = output
+-it = enter in terminal(container)
+--link = for connect 2 container to each other 
+-t = tag (for getting image name)
+-d = (only for network create) driver
+
+***basic cammand of docker***
+1)for docker installing in linux 			:- sudo yum or apt-get install docker -y
+2)for create image of nginx 				:- docker pull nginx 
+3)for check or shown created image of docker 		:- docker images
+4)for run images of docker 				:- docker run nginx
+5)for run images of docker in background		:- docker run -d nginx
+6)for check running container 				:- docker ps
+6)for check all container 				:- docker ps -a
+7)for create terminal for enter to container		:- docker run -d -it nginx
+8)for enter inside in the container 			:- docker exec -it <container_id/name> /bin/bash ....(use same linx instance or nginx)
+9)for stop running container 				:- docker stop <docker_id/name>
+9)for multiple docker container stop 			:- docker stop $(docker ps -q)
+10)for docker container remove 				:- docker rm <container_id/name>
+10)for docker multiple container remove			:- docker rm $(docker ps -aq) 
+10)for remove docker image 				:- docker rmi <image_id>
+11)for remove unused image				;- docker image prune
+11)for port mapping to docker container			:- docker run -d -p80:80 nginx 
+12)for get name to docker container			:- docker run -d -p80:80 nginx --name <give_name_for_container> <image_name>
+
+***for troubleshooting cammand of docker***
+13)for check docker container logs			:- docker logs <container_id>/<container_name>
+14)for inspect container(showning container details)	:- docker inspect <container_id>
+
+***for create image***
+15)docker create image 					:- docker create -d -p80:80 nginx
+16)for enter in docker container			:- docker exec -it <container name> /bin/bash
+17)for get backup for the create iamge			:- docker commit <container_name> <new_container_name>:1.0
+
+***for docker volume***
+18)for create volume(folder) in docker			:- docker volume create <name>
+19)for docker volume list out				:- docker volume ls
+20)for inspect docker volume 				:- docker volume inspect
+21)for remove docker volume 				:- docker volume rm <volume_name>
+22)un-used volume at a time remove 			:- docker volume prune
+
+***for docker network***
+23)for create network in docker 			:- docker network create mynetwork   (for bridge network)
+							:- docker network create -d bridge --name mynetwork   (for bridge network)
+							:- docker network create -d host --name mynetwork   (for host network)
+							:- docker network create -d none --name mynetwork   (for none network)
+24)for listout docker network				:- docker network ls
+25)for connect docker network to any container		:- docker network connect <network_name> <container_id>
+26)for disconnect docker network to any container	:- docker network disconnect <network_name> <container_id>
+27)for remove the docker network			:- docker network rm <network_name>/<network_id>
+28)for getting subnet CIDR block for docker network	:- docker network create <network_name> --subnet 10.0.0.0/16
+29)docker container layer inspect 			:- docker history <container_name/id>
+
+############################################################################# DOCKER MYSQL ############################################################################################
+
+1)for create mysql container create cammand 
+>> docker run -d -e MYSQL_ROOT_PASSWORD=Pass@123 mysql 
+>>docker exec -it <containerID/NAME> /bin/bash
+>>mysql -u root -pPass@123
+
+2)for create mysql container with volume for data storing(backup if container crashing)
+>>docker run -d --name majhasql -v /home/ec2-user/mybackup:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Pass@123 mysql
+
+3)for "named volume" type mysql container create (for backuping)
+>>docker run -d --name <container_name> -v <created_folder_name/path>:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pass@123 mysql
+
+#######################################################################################################################################################################################
+
+for build a image on it self (dockerfile)
+
+1)build a image it self (if file name Dockerfile) 		:- docker build .
+2)build a image it self with name (if file name Dockerfile)	:- docker build -t myimage .
+3)build a image it self with version (if file name Dockerfile)  :- docker build -t myimage:1.0
+4)build a image it self (if file name is different)		:- docker build -f myfile .
+5)build a image it self with name (if file name is different)	:- docker build -f myfile -t myimage . (put . of file path)
+
