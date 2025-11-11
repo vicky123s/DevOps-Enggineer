@@ -1,0 +1,11 @@
+# GIt HUB  COMMAND
+git clone
+git fetch origin
+got checkout main..... # check branch main and bracnh stagging
+git branch   ## check branch 
+git pull
+git checkout .. #  version 
+git branch
+nano .env   . ### check .env and edit version (main line  production name)
+nano docker file ... ### check docker file
+sudo docker build -t name and version   .   ### edit name version ..
