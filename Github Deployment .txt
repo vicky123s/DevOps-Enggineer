@@ -1,4 +1,7 @@
-# GIt HUB  COMMAND
+
+
+# GIT HUB  COMMAND FOR DEVLOPYMENT##
+
 git clone
 git fetch origin
 got checkout main..... # check branch main and bracnh stagging
@@ -33,3 +36,25 @@ sudo docker build -t name and version   .   ### edit name version ..
 | `find <dir> -name "*.log"` | Find files by name             |
 | `history`                  | Show command history           |
 | `clear`                    | Clear terminal screen          |
+
+
+
+Git Development
+
+| Command                | Description         |
+| ---------------------- | ------------------- |
+| `git init`             | Initialize repo     |
+| `git clone <url>`      | Clone repo          |
+| `git status`           | Check status        |
+| `git add .`            | Stage changes       |
+| `git commit -m "msg"`  | Commit changes      |
+| `git push origin main` | Push to repo        |
+| `git pull origin main` | Pull updates        |
+| `git log`              | Show commit history |
+
+
+
+
+
+
+
