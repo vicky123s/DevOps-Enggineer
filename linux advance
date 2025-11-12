@@ -17,5 +17,7 @@ cp -r cloude/ devops/                           recurvely all data copy
 mv aws/ file.txt
 mv aws/ Devops emgg                         rename file name
 ln -s /home/ubuntu/Devops_engg/hello.txt softlink-file    create soft limk and hard link
+df                                         disk usges
+
 
 
