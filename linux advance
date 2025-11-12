@@ -1,7 +1,20 @@
 Day 03 DEVOPS
 
 
-cd ..         back 
-cd bin folder           # binary story
+cd ..                                               back 
+cd bin folder                                       # binary story
 cd /home/ubuntu/devops/     
-rm -r cloude/     remove cloude r for recurve 
+rm -r cloude/                                       remove cloude r for recurve 
+echo "hello dosto" > vikas.txt                       print in file  and  create new file
+head myfile.txt                                     top tain line
+tail  -n  my file.txt                               last five line  -n stand for number 
+tail -f file.txt                                    show upcomming line
+less  file.txt                                      show page by page imformation
+more
+cd file.txt Devops/                         copy file.txt Devops directory 
+cd devops/file.txt vikas(directory)           copy devops tya aatli file.txt file vikas name directory madhe copy
+cp -r cloude/ devops/                           recurvely all data copy
+mv aws/ file.txt
+mv aws/ Devops emgg                         rename file name
+
+
