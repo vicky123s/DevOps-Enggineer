@@ -9,3 +9,27 @@ git branch
 nano .env   . ### check .env and edit version (main line  production name)
 nano docker file ... ### check docker file
 sudo docker build -t name and version   .   ### edit name version ..
+
+
+
+## SYSTEM AND NETWORK COMMAND##
+
+
+| Command                    | Description                    |
+| -------------------------- | ------------------------------ |
+| `top`                      | Show running processes         |
+| `ps -aux`                  | Show all processes             |
+| `kill <pid>`               | Kill a process                 |
+| `free -h`                  | Show memory usage              |
+| `df -h`                    | Disk usage                     |
+| `du -sh <dir>`             | Directory size                 |
+| `ifconfig` or `ip a`       | Show IP addresses              |
+| `ping <ip>`                | Check connectivity             |
+| `netstat -tuln`            | List open ports                |
+| `ss -tuln`                 | Modern replacement for netstat |
+| `curl <url>`               | Test API endpoints             |
+| `wget <url>`               | Download files                 |
+| `grep <pattern> <file>`    | Search text                    |
+| `find <dir> -name "*.log"` | Find files by name             |
+| `history`                  | Show command history           |
+| `clear`                    | Clear terminal screen          |
