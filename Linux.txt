@@ -5,8 +5,9 @@ ls -a List hidden file
 ll -h Human readable file
 cd  : Change directory
 mkdir : create directory
-touch
-chmod
+touch filename.txt      
+chmod 
+pwd  working directory
 root user
 port number
 i/P addresss
@@ -21,3 +22,4 @@ df -h :   disk size human readable
 free -h   check  used  ram memory
 cd /  go to root folder
 var    all log 
+
