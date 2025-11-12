@@ -1,6 +1,14 @@
-USER AND FILE MANAGEMENGT
+USERS AND GROUP  MANAGEMENGT
 
 uname        user name
 uptime       login time and user count 
 which        which file use and which perticuler file we are use
 id           user is group id 
+
+sudo useradd -m jethalal             user add 
+sudo passwd jethalal                 add password'
+su user                           switch user
+cat /etc/passwd                   check group users
+sudo userdel jethalal              user delete
+
+
