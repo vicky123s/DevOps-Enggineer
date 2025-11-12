@@ -1,16 +1,15 @@
 ssh -i "docker.pem" ubuntu@ec2-54-227-119-106.compute-1.amazonaws.com
-ls    List all file
-who am i     Display current user details.
-ls -a List hidden file
-ll -h Human readable file
-cd  : Change directory
-mkdir : create directory
-touch filename.txt      
-chmod 
-pwd  working directory
-root user
-port number
-i/P addresss
+ls                           # List all file
+who am i                     # Display current user details.
+ls -a                        # List hidden file
+ll -h                        #  Human readable file
+cd  :                        # Change directory
+mkdir :                      # create directory
+touch filename.txt            # 
+chmod                        # 
+pwd                          # working directory
+                            #  port number
+                              #i/P addresss                  
 Deployment Day to day upadte
 CPU check 
 disk -h
