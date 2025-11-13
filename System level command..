@@ -22,4 +22,12 @@ chomd 777 file.txt
 read write execute
 umask        00022
 
+## NETWORKING COMMAND ##
+
+
+PING   check two devoce communication
+netstat        active connection checck
+traceroute      trace path  
+
+
 
