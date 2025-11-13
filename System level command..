@@ -10,5 +10,16 @@ sudo passwd jethalal                 add password'
 su user                           switch user
 cat /etc/passwd                   check group users
 sudo userdel jethalal              user delete
+userdel jethalal                  user delete
+sudo gpasswd -a vikas devops        vikas la devops madde add
+sudo gpasswd -m vikas ,salil,vijay,karan tesrer
+sudo groupadd tester               crdeate group
+sudo groupdel tester
+
+
+#### FILE PERMISSION COMMAND ####
+chomd 777 file.txt
+read write execute
+umask        00022
 
 
