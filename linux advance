@@ -19,7 +19,17 @@ mv aws/ Devops emgg                         rename file name
 ln -s /home/ubuntu/Devops_engg/hello.txt softlink-file    create soft limk and hard link
 df                                         disk usges
 traceroute youtube.com            check path and check latency
-mtr youtube                       check path and ping at a time
+mtr youtube    (my trace route)                     check path and ping at a time
+nslookup youtube.com                               check name and ip address
+telnet  youtube.com 8080                         add port ni
+cat / etc/hosts                                 hostnmae
+ip address show
+iwconfig                                    wireless connection
+dig youtube.com                            all imformation and all ip address
+whois youtube                               all imf about webside
+
+
+
 
 
 
