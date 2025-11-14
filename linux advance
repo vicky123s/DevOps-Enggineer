@@ -29,6 +29,8 @@ dig youtube.com                            all imformation and all ip address
 whois youtube                               all imf about webside
 curl -X GET HTTP // last la jq
 awk ''{print $1}'  file name                   print frist coloum
+  VOLUME  
+lsblk       list all block
 
 
 
