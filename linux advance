@@ -18,6 +18,8 @@ mv aws/ file.txt
 mv aws/ Devops emgg                         rename file name
 ln -s /home/ubuntu/Devops_engg/hello.txt softlink-file    create soft limk and hard link
 df                                         disk usges
+traceroute youtube.com            check path and check latency
+mtr youtube                       check path and ping at a time
 
 
 
