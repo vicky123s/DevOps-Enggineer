@@ -1,0 +1,190 @@
+
+
+---
+
+# 🚀 **All Docker Commands for Deployment (With Uses)**
+
+## 🔹 **1. Docker Installation & Version**
+
+| Command                   | Use                              |
+| ------------------------- | -------------------------------- |
+| `docker --version`        | Check Docker version             |
+| `docker info`             | Check system-wide Docker details |
+| `systemctl start docker`  | Start Docker service             |
+| `systemctl enable docker` | Enable Docker at boot            |
+
+---
+
+# 🔹 **2. Docker Image Commands**
+
+| Command                          | Use                            |
+| -------------------------------- | ------------------------------ |
+| `docker pull <image>`            | Download image from Docker Hub |
+| `docker images`                  | List images                    |
+| `docker rmi <image>`             | Remove image                   |
+| `docker build -t <image_name> .` | Build image from Dockerfile    |
+| `docker tag <src> <dest>`        | Tag an image                   |
+| `docker history <image>`         | Show layers of an image        |
+
+---
+
+# 🔹 **3. Docker Container Commands**
+
+| Command                                | Use                            |
+| -------------------------------------- | ------------------------------ |
+| `docker run <image>`                   | Run a container                |
+| `docker run -d <image>`                | Run container in background    |
+| `docker run -p 80:80 <image>`          | Map ports container:host       |
+| `docker run -v host:container <image>` | Mount volume                   |
+| `docker run -e KEY=VALUE <image>`      | Pass environment variables     |
+| `docker run --name myapp <image>`      | Run with custom container name |
+| `docker ps`                            | List running containers        |
+| `docker ps -a`                         | List all containers            |
+| `docker stop <container>`              | Stop container                 |
+| `docker start <container>`             | Start container                |
+| `docker restart <container>`           | Restart container              |
+| `docker kill <container>`              | Force stop                     |
+| `docker rm <container>`                | Remove container               |
+
+---
+
+# 🔹 **4. Docker Logs & Debugging**
+
+| Command                            | Use                           |
+| ---------------------------------- | ----------------------------- |
+| `docker logs <container>`          | View logs                     |
+| `docker logs -f <container>`       | Live logs (follow)            |
+| `docker exec -it <container> bash` | Go inside a running container |
+| `docker inspect <container>`       | Detailed container info       |
+| `docker stats`                     | Live CPU/memory usage         |
+
+---
+
+# 🔹 **5. Docker Volume Commands**
+
+| Command                       | Use            |
+| ----------------------------- | -------------- |
+| `docker volume create myvol`  | Create volume  |
+| `docker volume ls`            | List volumes   |
+| `docker volume inspect myvol` | Inspect volume |
+| `docker volume rm myvol`      | Delete volume  |
+
+---
+
+# 🔹 **6. Docker Network Commands**
+
+| Command                                        | Use                          |
+| ---------------------------------------------- | ---------------------------- |
+| `docker network ls`                            | List networks                |
+| `docker network create mynetwork`              | Create custom bridge network |
+| `docker network connect mynetwork <container>` | Attach container to network  |
+| `docker network inspect mynetwork`             | Inspect network              |
+
+---
+
+# 🔹 **7. Docker Compose Commands (Deployment Use)**
+
+| Command                         | Use                          |
+| ------------------------------- | ---------------------------- |
+| `docker compose up`             | Start all services           |
+| `docker compose up -d`          | Start in background          |
+| `docker compose down`           | Stop & remove all containers |
+| `docker compose down --volumes` | Remove volumes also          |
+| `docker compose logs`           | View logs                    |
+| `docker compose restart`        | Restart services             |
+| `docker compose build`          | Rebuild services             |
+| `docker compose pull`           | Pull all images              |
+
+---
+
+# 🔹 **8. Docker Deployment-Specific Commands**
+
+## **👉 1. Deploy image to remote server**
+
+```
+docker save myapp:latest > myapp.tar
+scp myapp.tar user@server:/tmp/
+docker load < myapp.tar
+```
+
+## **👉 2. Deploy using Docker Hub**
+
+```
+docker login
+docker tag myapp username/myapp:v1
+docker push username/myapp:v1
+```
+
+## **👉 3. Deploy using Compose**
+
+```
+docker compose -f docker-compose.prod.yml up -d --build
+```
+
+---
+
+# 🔹 **9. Docker Cleanup Commands**
+
+| Command                  | Use                                        |
+| ------------------------ | ------------------------------------------ |
+| `docker system prune`    | Remove unused containers, images, networks |
+| `docker system prune -a` | Remove everything unused                   |
+| `docker image prune`     | Remove unused images                       |
+| `docker container prune` | Remove stopped containers                  |
+
+---
+
+# 🔹 **10. Docker Swarm Commands (Advanced Deployment)**
+
+| Command                                             | Use                  |
+| --------------------------------------------------- | -------------------- |
+| `docker swarm init`                                 | Enable Swarm mode    |
+| `docker node ls`                                    | List nodes           |
+| `docker stack deploy -c docker-compose.yml mystack` | Deploy stack         |
+| `docker service ls`                                 | List services        |
+| `docker service ps myservice`                       | Check service status |
+| `docker service update --image newimage myservice`  | Rolling update       |
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
