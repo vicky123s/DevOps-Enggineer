@@ -20,3 +20,10 @@ docker rm -f $(docker ps -aq)
 docker system prune -a --volumes -f    Optional: Clean unused data (images, networks, build cache)
 
 docker run  -d -p 443:443 --name tag-id nginx
+
+
+1) host
+2) bridge(default)
+3) user define bridge
+4) none network
+5) mcavlan  6) ipvlan   7) overlay   use as docker swarm    (kubernetes)                   
