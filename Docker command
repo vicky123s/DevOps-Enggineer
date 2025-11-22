@@ -146,10 +146,14 @@ docker compose -f docker-compose.prod.yml up -d --build
 | `docker service update --image newimage myservice`  | Rolling update       |
 
 ---
+  # docker  
 
+docker container prune -f            all stop container delete
+docker rm -f $(docker ps -aq)
 
+docker system prune -a --volumes -f    Optional: Clean unused data (images, networks, build cache)
 
-
+docker run  -d -p 443:443 --name tag-id nginx
 
 
 
