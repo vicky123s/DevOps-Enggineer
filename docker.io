@@ -26,4 +26,9 @@ docker run  -d -p 443:443 --name tag-id nginx
 2) bridge(default)
 3) user define bridge
 4) none network
-5) mcavlan  6) ipvlan   7) overlay   use as docker swarm    (kubernetes)                   
+5) mcavlan  6) ipvlan   7) overlay   use as docker swarm    (kubernetes)  
+
+
+
+
+
