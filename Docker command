@@ -1,9 +1,5 @@
 
 
----
-
-# 🚀 **All Docker Commands for Deployment (With Uses)**
-
 ## 🔹 **1. Docker Installation & Version**
 
 | Command                   | Use                              |
@@ -15,7 +11,7 @@
 
 ---
 
-# 🔹 **2. Docker Image Commands**
+# 🔹 **## 2. Docker Image Commands**
 
 | Command                          | Use                            |
 | -------------------------------- | ------------------------------ |
@@ -158,6 +154,8 @@ docker run  -d -p 443:443 --name tag-id nginx
 
 
 sudo usermod -aG docker $USER       ignoring sudo  command
+newgrp docker                       add group and refresh
+docker pull -e MYSQL_ROOT_PASSWORD=root mysql            container cerate
 
 
 
