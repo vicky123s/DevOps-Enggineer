@@ -1,0 +1,5 @@
+Syntax:
+sudo docker exec -t postgres-2 pg_dump -c -U postgres tagsmart-zecode-prod  > tagsmart-zecode-prod.sql
+
+Example:
+sudo docker exec -t postgres_db pg_dump -c -U postgres cms-v2-prod > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
