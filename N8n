@@ -36,3 +36,8 @@ services:
 
     volumes:
       - /data/n8n:/home/node
+
+
+
+
+sudo docker compose up -d
