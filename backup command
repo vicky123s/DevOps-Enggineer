@@ -3,3 +3,22 @@ sudo docker exec -t postgres-2 pg_dump -c -U postgres tagsmart-zecode-prod  > ta
 
 Example:
 sudo docker exec -t postgres_db pg_dump -c -U postgres cms-v2-prod > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+
+
+
+Restore Psql Database
+
+
+Syntax:
+create database '<database_name>'
+
+Example:
+create database cms-v2-testing
+
+
+Syntax:
+cat '<dump_file_name>'.sql | sudo docker exec -i '<psql container name>' psql -U '<postgres user>' -d '<database name>'
+
+Example:
+cat dump_01-04-2024_12_34_56.sql | sudo docker exec -i f55ef4f62627 psql -U postgres -d delhi_metro_service
+
